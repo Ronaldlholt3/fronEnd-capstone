@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-
+import BACKEND_URL from '../config';
 function PotionList() {
   const [potions, setPotions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/potions') // Adjusted the endpoint
+    fetch(BACKEND_URL+'potions') // Adjusted the endpoint
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
