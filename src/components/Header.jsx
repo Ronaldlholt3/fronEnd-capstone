@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react'; // Import useState
-
+import { Link } from 'react-router-dom'
 
 
 
@@ -45,9 +45,9 @@ function Header() {
             </li>
             {/* ... other navbar items ... */}
             <li className="navbar-item">
-              <a href="/Potions" className="navbar-link" data-nav-link>
+              <Link to ="/potions" className="navbar-link" data-nav-link>
                 Potion Shop 🫙
-              </a>
+              </Link>
             </li>
             <li className="navbar-item">
               <a href="/contact" className="navbar-link" data-nav-link>
