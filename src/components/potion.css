@@ -1,0 +1,87 @@
+
+body {
+    margin: 0;
+}
+
+.P_page-wrapper {
+    position: relative; 
+    z-index: 2; 
+    padding-top: 250px; 
+}
+
+.P_background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdnb.artstation.com/p/assets/images/images/037/347/731/original/austin-abrams-magicring-simple.gif?1620149027'); 
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.P_container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    width: 300px;
+    margin: 0 auto; 
+    position: relative; 
+    z-index: 3; 
+}
+
+.P_content {
+    
+    color: #333;
+    padding: 15px; 
+
+}
+
+.P_rounded-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 4; 
+}
+
+.P_rounded-bottom::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(229, 22, 22, 0.8); 
+    transform: translate(-25px, 10px);
+    z-index: 5; 
+}
+
+.P_rounded-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(38, 26, 168, 0.8); 
+    transform: translate(25px, 10px);
+    z-index: 5; 
+}
+
+.P_h3 {
+    background-color: lime;
+    padding: 20px 50px;
+    text-align: center;
+    margin-top: 20px; 
+    position: relative; 
+    z-index: 3; 
+}
+
