@@ -18,4 +18,5 @@ const PotionsPage = () => {
   );
 };
 
+// my potions set up
 export default PotionsPage;
