@@ -33,7 +33,9 @@ function PotionList() {
 
   return (
     <div style={styles.container}>
-      <h2>Available Potions</h2>
+      <h2 style={{ marginTop: '80px', textAlign: 'center', fontSize: '2rem' }}>
+      Available Potions
+      </h2>
       <div style={styles.cardContainer}>
         {potions.map((potion) => (
           <div key={potion._id} style={styles.card}>
