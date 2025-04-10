@@ -3,7 +3,7 @@ import './Contact.css';
 import BACKEND_URL from '../config';
 
 function Contact() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', note: '' });
 
   const handleChange = e => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
