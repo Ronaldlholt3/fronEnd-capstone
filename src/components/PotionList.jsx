@@ -53,17 +53,21 @@ function PotionList() {
 }
 
 // Styles for the component
+
 const styles = {
   container: {
     padding: '20px',
-    backgroundColor: '#1c1d25', // Set background color for the content area
-    marginTop: '60px', // Adjust for the navbar height (you can tweak this)
-    minHeight: '100vh', // Ensure full viewport height for content area
+    marginTop: '60px',
+    minHeight: '100vh',
+    backgroundImage: 'url("/images/potions-background.jpg")', // or a full URL
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    color: 'white', // default all text to white
   },
   cardContainer: {
     display: 'flex',
-    flexWrap: 'wrap', // Allows wrapping of cards to the next line
-    justifyContent: 'space-around', // Centers the cards and spaces them evenly
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
   },
   card: {
     border: '1px solid #ccc',
@@ -72,6 +76,8 @@ const styles = {
     margin: '10px',
     width: '220px',
     textAlign: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.6)', // dark overlay so white text is readable
+    color: 'white',
     boxShadow: '0 2px 5px rgba(0, 0, 0, 0.2)',
   },
   image: {
@@ -80,5 +86,34 @@ const styles = {
     borderRadius: '4px',
   },
 };
+
+
+// const styles = {
+//   container: {
+//     padding: '20px',
+//     backgroundColor: '#1c1d25', // Set background color for the content area
+//     marginTop: '60px', // Adjust for the navbar height (you can tweak this)
+//     minHeight: '100vh', // Ensure full viewport height for content area
+//   },
+//   cardContainer: {
+//     display: 'flex',
+//     flexWrap: 'wrap', // Allows wrapping of cards to the next line
+//     justifyContent: 'space-around', // Centers the cards and spaces them evenly
+//   },
+//   card: {
+//     border: '1px solid #ccc',
+//     borderRadius: '8px',
+//     padding: '10px',
+//     margin: '10px',
+//     width: '220px',
+//     textAlign: 'center',
+//     boxShadow: '0 2px 5px rgba(0, 0, 0, 0.2)',
+//   },
+//   image: {
+//     width: '100%',
+//     height: 'auto',
+//     borderRadius: '4px',
+//   },
+// };
 
 export default PotionList;
