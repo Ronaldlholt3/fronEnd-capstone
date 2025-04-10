@@ -57,12 +57,15 @@ function PotionList() {
 const styles = {
   container: {
     padding: '20px',
-    marginTop: '60px',
+    marginTop: '0', // Remove top margin so it sits under the navbar
     minHeight: '100vh',
-    backgroundImage: 'url("https://cdnb.artstation.com/p/assets/images/images/037/347/731/original/austin-abrams-magicring-simple.gif?1620149027")', // or a full URL
+    backgroundImage: 'url("https://cdnb.artstation.com/p/assets/images/images/037/347/731/original/austin-abrams-magicring-simple.gif?1620149027")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    color: 'white', // default all text to white
+    backgroundRepeat: 'no-repeat',
+    color: 'white',
+    position: 'relative',
+    zIndex: 0,
   },
   cardContainer: {
     display: 'flex',
