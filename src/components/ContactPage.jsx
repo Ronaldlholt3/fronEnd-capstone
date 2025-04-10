@@ -19,7 +19,7 @@ function Contact() {
       });
       if (response.ok) {
         alert("Message sent!");
-        setFormData({ name: '', email: '', message: '' });
+        setFormData({ name: '', email: '', note: '' });
       }
     } catch (err) {
       console.error("Error:", err);
