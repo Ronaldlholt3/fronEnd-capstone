@@ -5,7 +5,6 @@ import Header from './components/Header'
 import Footer from './components/Footer';
 import './index.css'; // global styles
 import Contact from './components/ContactPage';
-import Potions from './components/PotionPage';
 import PotionList from './components/PotionList';
 
 
@@ -17,7 +16,7 @@ function App() {
       <Header />
       <Routes>
       <Route path='/' element={<Home/>} />
-      <Route path='/Contact' element={<Contact/>} />
+      <Route path='/contact' element={<Contact/>} />
       <Route path='/potions'element={<PotionList/>} />
       </Routes>
     <Footer />

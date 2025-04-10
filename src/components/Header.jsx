@@ -45,14 +45,14 @@ function Header() {
             </li>
             {/* ... other navbar items ... */}
             <li className="navbar-item">
-              <Link to ="/potions" className="navbar-link" data-nav-link>
+              <Link to="/potions" className="navbar-link" data-nav-link>
                 Potion Shop 🫙
               </Link>
             </li>
             <li className="navbar-item">
-              <a href="/contact" className="navbar-link" data-nav-link>
+              <Link to="/contact" className="navbar-link" data-nav-link>
                 Contact 📨
-              </a>
+              </Link>
             </li>
           </ul>
           <a href="#" className="navbar-action-btn">

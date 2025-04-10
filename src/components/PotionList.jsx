@@ -38,7 +38,7 @@ function PotionList() {
         {potions.map((potion) => (
           <div key={potion._id} style={styles.card}>
             <img
-              src={potion.imageURL} // Assuming imageURL is part of your potion data
+              src={potion.imageURL} 
               alt={potion.name}
               style={styles.image}
             />
