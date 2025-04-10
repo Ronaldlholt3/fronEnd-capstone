@@ -1,24 +1,26 @@
 .contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-    background-color: #f4f4f4;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  background-color: #000; /* Changed from #f4f4f4 to black */
+  padding-top: 100px; /* Creates space under navbar */
+}
+
   
-  .contact-form {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 400px; 
-  }
-  
-  .contact-form h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #333;
-  }
+.contact-form {
+  background-color: #1c1c1c; /* dark but distinct from full black */
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  width: 400px;
+}
+
+.contact-form h2,
+.form-group label {
+  color: white;
+}
   
   .form-group {
     margin-bottom: 1rem;
@@ -37,6 +39,8 @@
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: #fff; /* Keep readable fields */
+    color: #000;
     box-sizing: border-box; 
   }
   
