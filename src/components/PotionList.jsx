@@ -59,7 +59,7 @@ const styles = {
     padding: '20px',
     marginTop: '60px',
     minHeight: '100vh',
-    backgroundImage: 'url("/images/potions-background.jpg")', // or a full URL
+    backgroundImage: 'url("https://cdnb.artstation.com/p/assets/images/images/037/347/731/original/austin-abrams-magicring-simple.gif?1620149027")', // or a full URL
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     color: 'white', // default all text to white
